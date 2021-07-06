@@ -1,0 +1,36 @@
+[
+  {
+    "name": "saturation",
+    "usage": "saturation: '1.5'"
+  },
+  {
+    "name": "brightness",
+    "usage": "brightness: '0.5'"
+  },
+  {
+    "name": "contrast",
+    "usage": "contrast: '2'"
+  },
+  {
+    "name": "hue-rotate",
+    "usage": "hueRotate: '-20deg'"
+  },
+  {
+    "name": "sepia",
+    "usage": "sepia: '0.05'"
+  },
+  {
+    "name": "grayscale",
+    "usage": "grayscale: '0.8'"
+  },
+  {
+    "name": "backgroundBefore",
+    "usage": "backgroundBefore: '#adadad'",
+    "comments": "for kelvin"
+  },
+  {
+    "name": "backgroundAfter",
+    "usage": "backgroundAfter: '#cfcfcf'",
+    "comments": "for kelvin"
+  }
+]

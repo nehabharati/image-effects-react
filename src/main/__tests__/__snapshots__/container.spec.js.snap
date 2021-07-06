@@ -1,0 +1,107 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Container block renders correctly 1`] = `
+.c1 {
+  width: 100%;
+  height: 15rem;
+  margin: 0;
+  position: relative;
+}
+
+.c1 img {
+  width: 100%;
+  height: 15rem;
+  object-fit: cover;
+}
+
+-webkit-filter:  hue-rotate(-10deg)  brightness(1.1)   sepia(0.3) saturate(1.6)  filter:  hue-rotate(-10deg)  brightness(1.1)   sepia(0.3) saturate(1.6) .c0:before {
+  content: '';
+  display: block;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.c1:after {
+  content: '';
+  display: block;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  pointer-events: none;
+  z-index: 3;
+}
+
+.c1::after {
+  background: #0044cc;
+  mix-blend-mode: screen;
+  opacity: .3;
+}
+
+<figure
+  className="c0 c1"
+>
+  <img
+    src=""
+  />
+</figure>
+`;
+
+exports[`add property renders with right property 1`] = `
+.c1 {
+  width: 100%;
+  height: 15rem;
+  margin: 0;
+  position: relative;
+}
+
+.c1 img {
+  width: 100%;
+  height: 15rem;
+  object-fit: cover;
+}
+
+-webkit-filter:  hue-rotate(-20deg)  brightness(1.1)   sepia(0.5) saturate(1.6)  filter:  hue-rotate(-20deg)  brightness(1.1)   sepia(0.5) saturate(1.6) .c0:before {
+  content: '';
+  display: block;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.c1:after {
+  content: '';
+  display: block;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  pointer-events: none;
+  z-index: 3;
+}
+
+.c1::after {
+  background: #0044cc;
+  mix-blend-mode: screen;
+  opacity: .3;
+}
+
+<figure
+  className="c0 c1"
+>
+  <img
+    src=""
+  />
+</figure>
+`;

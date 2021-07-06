@@ -1,6 +1,7 @@
 import './App.css';
 import { Container } from './main';
 import filters from './main/filters.json';
+import properties from './properties.json';
 import { useState } from 'react';
 
 function App() {
@@ -17,7 +18,7 @@ function App() {
   };
   return (
     <div>
-      <h2>Add instagram filters to your images</h2>
+      <h1>Add instagram filters to your images</h1>
 
       <div className="add-image-wrapper">
         <label htmlFor="insert">Paste any image to test</label>
@@ -32,13 +33,13 @@ function App() {
 
       <div className="filter-wrapper">
         {filters.map((filter) => (
-          <div className="filter-block">
+          <div key={filter.name} className="filter-block">
             <Container
               options={{
                 filter: filter.name,
               }}
             >
-              <img src={selectedImage} alt="picture" />
+              <img src={selectedImage} alt="filter" />
             </Container>
             <div className="filter-description">
               <p>{filter.name}</p>
@@ -64,19 +65,19 @@ function App() {
         </pre>
         <pre>
           <code>
-            {`import Container from "image-effects-react"
+            {`import { Container } from "image-effects-react"
 
-    function addFilter() {
-        return (
-          <Container
-            options={{
-              filter: 'walden',
-            }}
-          >
-            <img src={selectedImage} alt="picture" />
-          </Container>
-        )
-      }
+function addFilter() {
+    return (
+      <Container
+        options={{
+          filter: 'walden',
+        }}
+      >
+        <img src="./image.png" alt="filter" />
+      </Container>
+    )
+  }
           `}
           </code>
         </pre>
@@ -84,26 +85,50 @@ function App() {
         <h3>How to customize?</h3>
         <pre>
           <code>
-            {`import Container from "image-effects-react"
+            {`import { Container } from "image-effects-react"
 
-      function addFilter() {
-        return (
-          <Container
-            options={{
-              filter: 'walden',
-              hue-rotate: '-20deg',
-              contrast: '2',
-              sepia: '0.5',
-              saturate: '1'
-            }}
-          >
-            <img src={selectedImage} alt="picture" />
-          </Container>
-        )
-      }
+function addFilter() {
+  return (
+    <Container
+      options={{
+        filter: 'walden',
+        hueRotate: '-20deg',
+        contrast: '2',
+        sepia: '0.5',
+        saturate: '1'
+      }}
+    >
+      <img src="./image.png" alt="filter" />
+    </Container>
+  )
+}
           `}
           </code>
         </pre>
+      </section>
+
+      <section className="property-table">
+        <h2>Available properties</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Property</th>
+              <th>Usage</th>
+            </tr>
+          </thead>
+          {properties.map((property) => (
+            <tbody key={property.name}>
+              <tr>
+                <td>{property.name}</td>
+                <td>
+                  {property.usage}
+                  <br />
+                  <b>{property.comments && `(${property.comments})`}</b>
+                </td>
+              </tr>
+            </tbody>
+          ))}
+        </table>
       </section>
 
       <section>
