@@ -59,7 +59,7 @@ import { ImageContainer } from "image-effects-react"
 | brightness       | Adjusts the brightness of an image                                | brightness: '0.5'           |
 | contrast         | Adjusts the contrast of an image                                  | contrast: '2'               |
 | hue-rotate       | Applies a hue rotation to the image in degrees                    | hueRotate: '-20deg'         |
-| sepia            | Adds sepia to ann image                                           | sepia: '0.05'               |
+| sepia            | Adds sepia to an image                                            | sepia: '0.05'               |
 | grayscale        | Converts the image to grayscale                                   | grayscale: '0.8'            |
 | backgroundBefore | Adjust the background of an image with the :before pseudo element | backgroundBefore: '#adadad' |
 | backgroundAfter  | Adjust the background of an image with the :after pseudo element  | backgroundAfter: '#cfcfcf'  |
