@@ -18,7 +18,7 @@ const filterList = {
 
   aden(props) {
     return "\n        img {\n            width: 100%;\n            height: 15rem;\n            object-fit:cover;\n            }\n        position: relative;\n        ".concat((0, _customize.hcbs)({
-      hue: props.hue ? props.hue : '-20deg',
+      hue: props.hueRotate ? props.hueRotate : '-20deg',
       sat: props.saturation ? props.saturation : 0.85,
       bright: props.brightness ? props.brightness : 1.2,
       contrast: props.contrast ? props.contrast : 0.9
@@ -27,7 +27,7 @@ const filterList = {
 
   amaro(props) {
     return "\n        img {\n            width: 100%;\n            height: 15rem; object-fit: cover;\n            }\n        position: relative;\n        z-index: 1;\n        ".concat((0, _customize.hcbs)({
-      hue: props.hue ? props.hue : '-10deg',
+      hue: props.hueRotate ? props.hueRotate : '-10deg',
       sat: props.saturation ? props.saturation : 1.5,
       bright: props.brightness ? props.brightness : 1.1,
       contrast: props.contrast ? props.contrast : 0.9

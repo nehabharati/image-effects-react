@@ -1,63 +1,63 @@
 [
   {
     "name": "1977",
-    "code": "filter: contrast(1.1) brightness(1.1) saturate(1.1);"
+    "code": "contrast(1.1) brightness(1.1) saturate(1.1)"
   },
   {
     "name": "aden",
-    "code": "filter: contrast(0.9) brightness(1.2) hue-rotate(-20deg) saturate(0.85);"
+    "code": "contrast(0.9) brightness(1.2) hue-rotate(-20deg) saturate(0.85)"
   },
   {
     "name": "amaro",
-    "code": "filter:contrast(0.9) brightness(1.1) hue-rotate(-10deg) saturate(1.5);"
+    "code": "contrast(0.9) brightness(1.1) hue-rotate(-10deg) saturate(1.5)"
   },
   {
     "name": "brannan",
-    "code": "filter: contrast(1.4) sepia(0.5);"
+    "code": "contrast(1.4) sepia(0.5)"
   },
   {
     "name": "clarendon",
-    "code": "filter: contrast(1.2) saturate(1.35);"
+    "code": "contrast(1.2) saturate(1.35)"
   },
   {
     "name": "earlyBird",
-    "code": "filter: contrast(0.9) sepia(0.2);"
+    "code": "contrast(0.9) sepia(0.2)"
   },
   {
     "name": "gingham",
-    "code": "filter: brightness(1.05) hue-rotate(-10deg)"
+    "code": "brightness(1.05) hue-rotate(-10deg)"
   },
   {
     "name": "hudson",
-    "code": "filter: contrast(0.9) brightness(1.2) saturate(1.1);"
+    "code": "contrast(0.9) brightness(1.2) saturate(1.1)"
   },
   {
     "name": "inkwell",
-    "code": "filter: sepia(0.3) contrast(1.1) brightness(1.1) grayscale(1);"
+    "code": "sepia(0.3) contrast(1.1) brightness(1.1) grayscale(1)"
   },
   {
     "name": "kelvin",
-    "code": ":after { background: #b77d21; } :before: {background: #382c34;}"
+    "code": ":after { background: #b77d21 } :before: {background: #382c34}"
   },
   {
     "name": "lark",
-    "code": "filter: contrast(0.9);"
+    "code": "contrast(0.9)"
   },
   {
     "name": "lofi",
-    "code": "filter: contrast(1.5) saturate(1.1);"
+    "code": "contrast(1.5) saturate(1.1)"
   },
   {
     "name": "maven",
-    "code": "filter: contrast(0.95) brightness(0.95) saturate(1.5) sepia(0.25);"
+    "code": "contrast(0.95) brightness(0.95) saturate(1.5) sepia(0.25)"
   },
   {
     "name": "mayfair",
-    "code": "filter: contrast(1.1) saturate(1.1);"
+    "code": "contrast(1.1) saturate(1.1)"
   },
   {
     "name": "moon",
-    "code": "filter:  contrast(1.1) brightness(1.1) grayscale(1);"
+    "code": "contrast(1.1) brightness(1.1) grayscale(1)"
   },
   {
     "name": "perpetua",
@@ -65,38 +65,38 @@
   },
   {
     "name": "reyes",
-    "code": "filter: contrast(0.85) brightness(1.1) saturate(0.75) sepia(0.22);"
+    "code": "contrast(0.85) brightness(1.1) saturate(0.75) sepia(0.22)"
   },
   {
     "name": "rise",
-    "code": "filter: contrast(0.9) brightness(1.05) saturate(0.9) sepia(0.2);"
+    "code": "contrast(0.9) brightness(1.05) saturate(0.9) sepia(0.2)"
   },
   {
     "name": "slumber",
-    "code": "filter: saturate(0.66) brightness(1.05);"
+    "code": "saturate(0.66) brightness(1.05)"
   },
   {
     "name": "stinson",
-    "code": "filter: contrast(0.75) brightness(1.15) saturate(0.85);"
+    "code": "contrast(0.75) brightness(1.15) saturate(0.85)"
   },
   {
     "name": "toaster",
-    "code": "filter: contrast(1.5) brightness(0.9);"
+    "code": "contrast(1.5) brightness(0.9)"
   },
   {
     "name": "valencia",
-    "code": "filter: contrast(1.08) brightness(1.08) sepia(0.08);"
+    "code": "contrast(1.08) brightness(1.08) sepia(0.08)"
   },
   {
     "name": "walden",
-    "code": "filter: brightness(1.1) hue-rotate(-10deg) sepia(0.3) saturate(1.6);"
+    "code": "brightness(1.1) hue-rotate(-10deg) sepia(0.3) saturate(1.6)"
   },
   {
     "name": "willow",
-    "code": "filter: contrast(0.95) brightness(0.9) grayscale(0.5);"
+    "code": "contrast(0.95) brightness(0.9) grayscale(0.5)"
   },
   {
     "name": "xpro",
-    "code": "filter: sepia(0.3);"
+    "code": "sepia(0.3)"
   }
 ]

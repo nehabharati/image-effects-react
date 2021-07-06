@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container } from '../index';
+import { Container } from '../main/index';
 import renderer from 'react-test-renderer';
 import 'jest-styled-components';
 
