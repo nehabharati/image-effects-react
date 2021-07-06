@@ -1,6 +1,6 @@
 import './App.css';
-import { Container } from './main/styles';
-import filters from './filters.json';
+import { Container } from './main';
+import filters from './main/filters.json';
 import { useState } from 'react';
 
 function App() {
