@@ -13,7 +13,7 @@ No problem. Feel free to customize each filter by their properties
 You can add any filter inn the options
 
 ```
-import Container from "image-effects-react"
+import { Container } from "image-effects-react"
 
     function addFilter() {
         return (
@@ -31,7 +31,7 @@ import Container from "image-effects-react"
 Want to tweak these filters.
 
 ```
-import Container from "image-effects-react"
+import { Container } from "image-effects-react"
 
       function addFilter() {
         return (
