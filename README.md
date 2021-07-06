@@ -10,7 +10,7 @@ No problem. Feel free to customize each filter by their properties
 
 ## Usage
 
-You can add any filter inn the options
+You can add any filter in the options
 
 ```
 import { Container } from "image-effects-react"
@@ -28,7 +28,7 @@ import { Container } from "image-effects-react"
       }
 ```
 
-Want to tweak these filters.
+Want to tweak these filters. You have a range of filters to choose from.
 
 ```
 import { Container } from "image-effects-react"
@@ -49,6 +49,19 @@ import { Container } from "image-effects-react"
         )
       }
 ```
+
+## Available Properties
+
+| Property         | Usage                       |
+| ---------------- | --------------------------- |
+| saturation       | saturation: '1.5'           |
+| brightness       | brightness: '0.5'           |
+| contrast         | contrast: '2'               |
+| hue-rotate       | hueRotate: '-20deg'         |
+| sepia            | sepia: '0.05'               |
+| grayscale        | grayscale: '0.8'            |
+| backgroundBefore | backgroundBefore: '#adadad' |
+| backgroundAfter  | backgroundAfter: '#cfcfcf'  |
 
 ## Compatibility
 
