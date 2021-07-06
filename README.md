@@ -1,7 +1,5 @@
 # image-effects-react
 
-## Description
-
 This is a library used to add instagram filters to your images There
 are a range of filters listed here to choose from. Filters Not enough?
 No problem. Feel free to customize each filter by their properties
