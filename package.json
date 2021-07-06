@@ -7,7 +7,11 @@
     "filters",
     "images"
   ],
-  "version": "0.1.4",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nehabharati/image-effects-react.git"
+  },
+  "version": "0.1.7",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "dependencies": {
@@ -24,7 +28,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "rm -rf dist && NODE_ENV=production babel src/main --out-dir dist --copy-files",
+    "build": "react-scripts build",
+    "generate": "rm -rf dist && NODE_ENV=production babel src/main --out-dir dist --copy-files",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

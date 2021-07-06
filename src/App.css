@@ -115,7 +115,7 @@ table th:first-child {
   color: #fff;
 }
 
-table tr:last-child td:last-child {
+tbody td:last-child {
   border-bottom-right-radius: 10px;
 }
 
