@@ -10,8 +10,8 @@ No problem. Feel free to customize each filter by their properties
 
 ## Usage
 
-For more information, check out [this link](https://image-effects-react.vercel.app/)
-You can add any filter in the options
+For more information, check out [this link](https://image-effects-react.vercel.app/).<br>
+You can customize the filter by altering it's properties.
 
 ```
 import { Container } from "image-effects-react"
