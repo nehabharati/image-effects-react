@@ -64,9 +64,9 @@ import { ImageContainer } from "image-effects-react"
 | backgroundBefore | Adjust the background of an image with the :before pseudo element | backgroundBefore: '#adadad' |
 | backgroundAfter  | Adjust the background of an image with the :after pseudo element  | backgroundAfter: '#cfcfcf'  |
 
-For more information on these properties, here are some helpful links
-[Pseudo elements](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements)
-[Filter properties](https://developer.mozilla.org/en-US/docs/Web/CSS/filter)
+For more information on these properties, here are some helpful links on
+[pseudo elements](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements) and
+[filter properties](https://developer.mozilla.org/en-US/docs/Web/CSS/filter)
 
 ## Compatibility
 
