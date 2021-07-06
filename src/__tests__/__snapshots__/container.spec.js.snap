@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Container block renders correctly 1`] = `
+exports[`ImageContainer block renders correctly 1`] = `
 .c1 {
   width: 100%;
   height: 15rem;

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container } from '../main/index';
+import { ImageContainer } from '../main/index';
 import renderer from 'react-test-renderer';
 import 'jest-styled-components';
 
@@ -7,22 +7,22 @@ describe('No options', () => {
   it('renders correctly', () => {
     const tree = renderer
       .create(
-        <Container>
+        <ImageContainer>
           <img src="" />
-        </Container>
+        </ImageContainer>
       )
       .toJSON();
     expect(tree).toMatchSnapshot();
   });
 });
 
-describe('Container block', () => {
+describe('ImageContainer block', () => {
   it('renders correctly', () => {
     const tree = renderer
       .create(
-        <Container options={{ filter: 'walden' }}>
+        <ImageContainer options={{ filter: 'walden' }}>
           <img src="" />
-        </Container>
+        </ImageContainer>
       )
       .toJSON();
     expect(tree).toMatchSnapshot();
@@ -33,7 +33,7 @@ describe('add property', () => {
   it('renders with right property', () => {
     const tree = renderer
       .create(
-        <Container
+        <ImageContainer
           options={{
             filter: 'walden',
             hueRotate: '-20deg',
@@ -43,7 +43,7 @@ describe('add property', () => {
           }}
         >
           <img src="" />
-        </Container>
+        </ImageContainer>
       )
       .toJSON();
     expect(tree).toMatchSnapshot();

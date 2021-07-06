@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { filterList } from './css/filterList';
 
-export const Container = styled.figure`
+export const ImageContainer = styled.figure`
   width: 100%;
   height: 15rem;
   margin: 0;
@@ -32,7 +32,7 @@ export const Container = styled.figure`
   }}
 `;
 
-Container.defaultProps = {
+ImageContainer.defaultProps = {
   options: {
     saturation: 1.6,
     brightness: 1.1,

@@ -1,14 +1,12 @@
 import './App.css';
-import { Container } from './main';
+import { ImageContainer } from './main';
 import filters from './main/filters.json';
 import properties from './properties.json';
 import { useState } from 'react';
 
 function App() {
   const [image, setImage] = useState('');
-  const [selectedImage, setSelectedImage] = useState(
-    'https://images.unsplash.com/photo-1617839697885-0a4b5a127c56?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=MnwxfDB8MXxyYW5kb218MHx8bmF0dXJlLHdhdGVyfHx8fHx8MTYyNTM4Mzc2OQ&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1600'
-  );
+  const [selectedImage, setSelectedImage] = useState('https://bit.ly/3ytsBSU');
   const handleChange = (e) => setImage(e.target.value);
   const handleClick = () => {
     if (image !== '') {
@@ -34,13 +32,13 @@ function App() {
       <div className="filter-wrapper">
         {filters.map((filter) => (
           <div key={filter.name} className="filter-block">
-            <Container
+            <ImageContainer
               options={{
                 filter: filter.name,
               }}
             >
               <img src={selectedImage} alt="filter" />
-            </Container>
+            </ImageContainer>
             <div className="filter-description">
               <p>{filter.name}</p>
               <code>{filter.code}</code>
@@ -65,17 +63,17 @@ function App() {
         </pre>
         <pre>
           <code>
-            {`import { Container } from "image-effects-react"
+            {`import { ImageContainer } from "image-effects-react"
 
 function addFilter() {
     return (
-      <Container
+      <ImageContainer
         options={{
           filter: 'walden',
         }}
       >
         <img src="./image.png" alt="filter" />
-      </Container>
+      </ImageContainer>
     )
   }
           `}
@@ -85,11 +83,11 @@ function addFilter() {
         <h3>How to customize?</h3>
         <pre>
           <code>
-            {`import { Container } from "image-effects-react"
+            {`import { ImageContainer } from "image-effects-react"
 
 function addFilter() {
   return (
-    <Container
+    <ImageContainer
       options={{
         filter: 'walden',
         hueRotate: '-20deg',
@@ -99,7 +97,7 @@ function addFilter() {
       }}
     >
       <img src="./image.png" alt="filter" />
-    </Container>
+    </ImageContainer>
   )
 }
           `}

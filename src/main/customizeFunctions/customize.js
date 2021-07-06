@@ -15,11 +15,11 @@ export function hueBrightness(hueRotate, brightness) {
 export function cbs(props) {
   return `
     -webkit-filter: 
-        ${contrastBrightness.apply(this, [props.contrast, props.bright])}
+        ${contrastBrightness(props.contrast, props.bright)}
         saturate(${props.sat});
     
     filter: 
-        ${contrastBrightness.apply(this, [props.contrast, props.bright])}
+        ${contrastBrightness(props.contrast, props.bright)}
         saturate(${props.sat});
     `;
 }
@@ -27,11 +27,11 @@ export function cbs(props) {
 export function cbsep(props) {
   return `
     -webkit-filter: 
-        ${contrastBrightness.apply(this, [props.contrast, props.bright])}
+        ${contrastBrightness(props.contrast, props.bright)}
         sepia(${props.sepia});
     
     filter: 
-        ${contrastBrightness.apply(this, [props.contrast, props.bright])}
+        ${contrastBrightness(props.contrast, props.bright)}
         sepia(${props.sepia});
     `;
 }
@@ -39,12 +39,12 @@ export function cbsep(props) {
 export function hcbs(props) {
   return `
     -webkit-filter: 
-        ${contrastBrightness.apply(this, [props.contrast, props.bright])}
+        ${contrastBrightness(props.contrast, props.bright)}
         hue-rotate(${props.hue})
         saturate(${props.sat});
     
     filter: 
-        ${contrastBrightness.apply(this, [props.contrast, props.bright])}
+        ${contrastBrightness(props.contrast, props.bright)}
         hue-rotate(${props.hue})
         saturate(${props.sat});
     `;
@@ -77,12 +77,12 @@ export function csat(props) {
 export function scbsat(props) {
   return `
       -webkit-filter: 
-          ${contrastBrightness.apply(this, [props.contrast, props.bright])}
+          ${contrastBrightness(props.contrast, props.bright)}
           saturate(${props.sat})
           sepia(${props.sepia});
       
       filter:
-          ${contrastBrightness.apply(this, [props.contrast, props.bright])}
+          ${contrastBrightness(props.contrast, props.bright)}
           saturate(${props.sat})
           sepia(${props.sepia});
       `;
@@ -91,11 +91,11 @@ export function scbsat(props) {
 export function gcb(props) {
   return `
       -webkit-filter: 
-          ${contrastBrightness.apply(this, [props.contrast, props.bright])}
+          ${contrastBrightness(props.contrast, props.bright)}
           grayscale(${props.grayscale});
       
       filter: 
-          ${contrastBrightness.apply(this, [props.contrast, props.bright])}
+          ${contrastBrightness(props.contrast, props.bright)}
           grayscale(${props.grayscale});
       `;
 }
@@ -103,12 +103,12 @@ export function gcb(props) {
 export function hbss(props) {
   return `
       -webkit-filter: 
-      ${hueBrightness.apply(this, [props.hueRotate, props.bright])}
+      ${hueBrightness(props.hueRotate, props.bright)}
         sepia(${props.sepia})
         saturate(${props.sat})
       
       filter: 
-      ${hueBrightness.apply(this, [props.hueRotate, props.bright])}
+      ${hueBrightness(props.hueRotate, props.bright)}
         sepia(${props.sepia})
         saturate(${props.sat})
       `;
@@ -117,22 +117,22 @@ export function hbss(props) {
 export function hb(props) {
   return `
       -webkit-filter: 
-      ${hueBrightness.apply(this, [props.hueRotate, props.bright])}
+      ${hueBrightness(props.hueRotate, props.bright)}
       
       filter: 
-      ${hueBrightness.apply(this, [props.hueRotate, props.bright])}
+      ${hueBrightness(props.hueRotate, props.bright)}
       `;
 }
 
 export function scbg(props) {
   return `
       -webkit-filter: 
-        ${contrastBrightness.apply(this, [props.contrast, props.bright])}
+        ${contrastBrightness(props.contrast, props.bright)}
         sepia(${props.sepia})
         grayscale(${props.grayscale});
       
       filter: 
-        ${contrastBrightness.apply(this, [props.contrast, props.bright])}
+        ${contrastBrightness(props.contrast, props.bright)}
         sepia(${props.sepia})
         grayscale(${props.grayscale});
       `;
