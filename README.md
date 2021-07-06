@@ -24,7 +24,7 @@ import { ImageContainer } from "image-effects-react"
             }}
           >
             <img src='./image.png' alt="filter" />
-          </Container>
+          </ImageContainer>
         )
       }
 ```
@@ -46,7 +46,7 @@ import { ImageContainer } from "image-effects-react"
             }}
           >
             <img src='./image.png' alt="filter" />
-          </Container>
+          </ImageContainer>
         )
       }
 ```
