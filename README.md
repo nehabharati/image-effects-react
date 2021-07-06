@@ -53,16 +53,20 @@ import { ImageContainer } from "image-effects-react"
 
 ## Available Properties
 
-| Property         | Usage                       |
-| ---------------- | --------------------------- |
-| saturation       | saturation: '1.5'           |
-| brightness       | brightness: '0.5'           |
-| contrast         | contrast: '2'               |
-| hue-rotate       | hueRotate: '-20deg'         |
-| sepia            | sepia: '0.05'               |
-| grayscale        | grayscale: '0.8'            |
-| backgroundBefore | backgroundBefore: '#adadad' |
-| backgroundAfter  | backgroundAfter: '#cfcfcf'  |
+| Property         | Description                                                       | Usage                       |
+| ---------------- | ----------------------------------------------------------------- | --------------------------- |
+| saturation       | Adjusts the saturation of an image                                | saturation: '1.5'           |
+| brightness       | Adjusts the brightness of an image                                | brightness: '0.5'           |
+| contrast         | Adjusts the contrast of an image                                  | contrast: '2'               |
+| hue-rotate       | Applies a hue rotation to the image in degrees                    | hueRotate: '-20deg'         |
+| sepia            | Adds sepia to ann image                                           | sepia: '0.05'               |
+| grayscale        | Converts the image to grayscale                                   | grayscale: '0.8'            |
+| backgroundBefore | Adjust the background of an image with the :before pseudo element | backgroundBefore: '#adadad' |
+| backgroundAfter  | Adjust the background of an image with the :after pseudo element  | backgroundAfter: '#cfcfcf'  |
+
+For more information on these properties, here are some helpful links
+[Pseudo elements](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements)
+[Filter properties](https://developer.mozilla.org/en-US/docs/Web/CSS/filter)
 
 ## Compatibility
 
