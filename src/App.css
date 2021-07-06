@@ -1,0 +1,102 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+h2 {
+  text-align: center;
+}
+
+.filter-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 50px;
+  margin: 2em;
+  justify-items: center;
+}
+
+.filter-block {
+  display: grid;
+  grid-template-rows: 1fr 0.6fr;
+  justify-items: center;
+  -webkit-box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.15);
+  /* align-items: center; */
+  /* margin: 10px; */
+}
+
+.filter-description {
+  text-align: center;
+  padding: 0 2em;
+}
+
+.filter-description code {
+  width: 20rem;
+  text-align: center;
+  margin: 10px;
+}
+
+pre {
+  background-color: #eff1f0;
+  padding: 2em;
+}
+
+.add-image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-image-wrapper input {
+  margin: 0 10px;
+  padding: 0.5em;
+}
+
+.add-image-wrapper button {
+  width: 50px;
+  border: none;
+  background-color: #ff4500;
+  color: #fff;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+section {
+  padding: 1rem 10rem;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
