@@ -1,5 +1,7 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
 }
 
 .App-logo {
@@ -13,19 +15,8 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
+li {
+  list-style: none;
 }
 
 h1,
@@ -70,15 +61,25 @@ pre {
   padding: 2em;
 }
 
-.add-image-wrapper {
+form {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 1em;
 }
 
+form div {
+  margin: 10px;
+}
+
+label {
+  margin-bottom: 10px;
+  margin: 10px;
+}
+
 .add-image-wrapper input {
-  margin: 0 10px;
+  margin-right: 10px;
   padding: 0.5em;
 }
 
@@ -99,6 +100,31 @@ section {
   box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.15); */
 }
 
+.properties {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.property-table {
+  max-width: 500px;
+  overflow-x: scroll;
+}
+
+section:last-of-type {
+  text-align: left;
+}
+
+section:last-of-type ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+}
+
+section:last-of-type ul li {
+  margin: 10px 20px;
+}
+
 table {
   margin: auto;
 }
@@ -109,7 +135,7 @@ td {
   text-align: center;
 }
 
-table tr:last-child td:first-child {
+tbody tr:last-child td:first-child {
   border-bottom-left-radius: 10px;
 }
 
@@ -118,7 +144,7 @@ table th:first-child {
   color: #fff;
 }
 
-tbody td:last-child {
+tbody tr:last-child td:last-child {
   border-bottom-right-radius: 10px;
 }
 
@@ -135,6 +161,40 @@ th {
   background-color: #b0bab5;
 }
 
+footer {
+  padding: 2em 0;
+  background-color: #eff1f0;
+  text-align: center;
+}
+
+footer div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+
+footer a img {
+  width: 30px;
+  margin: 0 10px;
+}
+
+@media screen and (max-width: 1024px) {
+  .filter-wrapper {
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  }
+  section {
+    padding: 2rem;
+  }
+  h1 {
+    padding: 0 1em;
+    text-align: center;
+  }
+  /* .add-image-wrapper {
+    margin: 0 2em;
+  } */
+}
 @media screen and (max-width: 500px) {
   .filter-wrapper {
     grid-template-columns: 1fr;
@@ -147,7 +207,12 @@ th {
     padding: 0 1em;
     text-align: center;
   }
-  .add-image-wrapper {
-    margin: 0 2em;
+  th,
+  td {
+    padding: 1em 0.5em !important;
+    font-size: 12px;
   }
+  /* .add-image-wrapper {
+    margin: 0 2em;
+  } */
 }

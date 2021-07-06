@@ -3,6 +3,8 @@ import { ImageContainer } from './main';
 import filters from './main/filters.json';
 import properties from './properties.json';
 import { useState } from 'react';
+import Github from './images/github.svg';
+import npm from './images/npm.png';
 
 function App() {
   const [image, setImage] = useState('');
@@ -16,18 +18,23 @@ function App() {
   };
   return (
     <div>
-      <h1>Add instagram filters to your images</h1>
+      <h1>image-effects-react</h1>
+      <h2>Add instagram filters to your images</h2>
 
-      <div className="add-image-wrapper">
-        <label htmlFor="insert">Paste any image to test</label>
-        <input
-          type="text"
-          name="insert"
-          value={image}
-          onChange={handleChange}
-        />
-        <button onClick={handleClick}>Add</button>
-      </div>
+      <form>
+        <div className="add-image-wrapper">
+          <label htmlFor="insert">Paste an image link to test</label>
+          <div>
+            <input
+              type="text"
+              name="insert"
+              value={image}
+              onChange={handleChange}
+            />
+            <button onClick={handleClick}>Add</button>
+          </div>
+        </div>
+      </form>
 
       <div className="filter-wrapper">
         {filters.map((filter) => (
@@ -105,34 +112,35 @@ function addFilter() {
         </pre>
       </section>
 
-      <section className="property-table">
+      <section className="properties">
         <h2>Available properties</h2>
-        <table>
-          <thead>
-            <tr>
-              <th>Property</th>
-              <th>Usage</th>
-            </tr>
-          </thead>
-          {properties.map((property) => (
-            <tbody key={property.name}>
+        <div className="property-table">
+          <table>
+            <thead>
               <tr>
-                <td>{property.name}</td>
-                <td>
-                  {property.usage}
-                  <br />
-                  <b>{property.comments && `(${property.comments})`}</b>
-                </td>
+                <th>Property</th>
+                <th>Usage</th>
               </tr>
+            </thead>
+            <tbody>
+              {properties.map((property) => (
+                <tr key={property.name}>
+                  <td>{property.name}</td>
+                  <td>
+                    {property.usage}
+                    <br />
+                    <b>{property.comments && `(${property.comments})`}</b>
+                  </td>
+                </tr>
+              ))}
             </tbody>
-          ))}
-        </table>
+          </table>
+        </div>
       </section>
 
       <section>
-        <h2>Features</h2>
+        <h2>Compatibility</h2>
         <ul>
-          <li>Each filter depicts the properties that can be customized.</li>
           <li>Google Chrome 43+  ✅</li>
           <li>Mozilla Firefox 38+  ✅</li>
           <li>Safari 8+ ✅</li>
@@ -140,6 +148,19 @@ function addFilter() {
           <li>Internet Explorer ❌</li>
         </ul>
       </section>
+
+      <footer>
+        Made with ❤️ by Neha Bharati <br />
+        <div>
+          <a href="https://github.com/nehabharati/image-effects-react.git">
+            <img src={Github} alt="github" />
+          </a>{' '}
+          |{' '}
+          <a href="https://www.npmjs.com/package/image-effects-react">
+            <img src={npm} alt="npm" />
+          </a>
+        </div>
+      </footer>
     </div>
   );
 }
