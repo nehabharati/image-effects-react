@@ -11,9 +11,13 @@
     "type": "git",
     "url": "https://github.com/nehabharati/image-effects-react.git"
   },
-  "version": "0.1.7",
+  "version": "0.2.1",
   "main": "dist/index.js",
   "module": "dist/index.js",
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
     "@testing-library/jest-dom": "^5.14.1",
