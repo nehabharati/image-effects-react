@@ -31,3 +31,17 @@ export const Container = styled.figure`
     });
   }}
 `;
+
+Container.defaultProps = {
+  options: {
+    saturation: 1.6,
+    brightness: 1.1,
+    contrast: undefined,
+    sepia: 0.3,
+    grayscale: undefined,
+    hueRotate: '-10deg',
+    filter: 'walden',
+    backgroundBefore: undefined,
+    backgroundAfter: undefined,
+  },
+};

@@ -3,6 +3,19 @@ import { Container } from '../main/index';
 import renderer from 'react-test-renderer';
 import 'jest-styled-components';
 
+describe('No options', () => {
+  it('renders correctly', () => {
+    const tree = renderer
+      .create(
+        <Container>
+          <img src="" />
+        </Container>
+      )
+      .toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+});
+
 describe('Container block', () => {
   it('renders correctly', () => {
     const tree = renderer

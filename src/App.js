@@ -35,9 +35,9 @@ function App() {
         {filters.map((filter) => (
           <div key={filter.name} className="filter-block">
             <Container
-              options={{
-                filter: filter.name,
-              }}
+            // options={{
+            //   filter: filter.name,
+            // }}
             >
               <img src={selectedImage} alt="filter" />
             </Container>
