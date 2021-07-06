@@ -29,7 +29,7 @@ import { Container } from "image-effects-react"
       }
 ```
 
-Want to tweak these filters. You have a range of filters to choose from.
+Want to tweak these filters. Choose which properties for each filter you want to customize.
 
 ```
 import { Container } from "image-effects-react"
@@ -39,7 +39,7 @@ import { Container } from "image-effects-react"
           <Container
             options={{
               filter: 'walden',
-              hue-rotate: '-20deg',
+              hueRotate: '-20deg',
               contrast: '2',
               sepia: '0.5',
               saturate: '1'
