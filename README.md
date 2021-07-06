@@ -10,6 +10,7 @@ No problem. Feel free to customize each filter by their properties
 
 ## Usage
 
+For more information, check out [this link] (https://image-effects-react.vercel.app/)
 You can add any filter in the options
 
 ```
