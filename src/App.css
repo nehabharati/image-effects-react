@@ -254,7 +254,7 @@ footer a img {
     padding: 1em 0.5em !important;
     font-size: 12px;
   }
-  /* .add-image-wrapper {
-    margin: 0 2em;
-  } */
+  .code-example {
+    flex-direction: column;
+  }
 }
