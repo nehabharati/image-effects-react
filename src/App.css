@@ -256,5 +256,6 @@ footer a img {
   }
   .code-example {
     flex-direction: column;
+    width: 100%;
   }
 }
