@@ -255,7 +255,10 @@ footer a img {
     font-size: 12px;
   }
   .code-example {
-    flex-direction: column;
-    width: 100%;
+    flex-direction: column; 
   }
+  .code-example figure {
+    width: 100%;
+    margin-left: 0;
+}
 }
